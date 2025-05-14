@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: tempsentpolicy
-Version: 0.0.1
+Version: 0.0.2
 Summary: Designed to ensure robust generalization across time stamps for sentiment analysis in policy-related texts
 Author: Anonymous ACL SRW
 Author-email: anonaclsrw@proton.me
@@ -34,6 +34,8 @@ Key features include:
 - Continuous time-series clustering to prioritize data points for annotation based on temporal trends.  
 - Advanced model merging techniques to unify multiple models fine-tuned on distinct temporal slices.  
 
+
+Methods:  
 - Continous time series is performed using `Ruptures`  
 - It supports the following merging techniques:  
     1.  Uniform Souping
@@ -93,9 +95,9 @@ To learn how we used it in our experiments, go to `demo.ipynb`. Alternatively, r
 1. Lets start off by performing continous time series clustering to select our annotated data
 
 ```python
-from temporally_sensitive_sentiment_analysis_for_policy.merging import greedy_souping, ties
-from temporally_sensitive_sentiment_analysis_for_policy.fine_tuning import finetune
-from temporally_sensitive_sentiment_analysis_for_policy.continous_time_series_clustering import cluster_sampling, continous_time_series_clustering
+from tempsentpolicy import greedy_souping, ties
+from tempsentpolicy import finetune
+from tempsentpolicy import cluster_sampling, continous_time_series_clustering
 
 df_climate=continous_time_series_clustering(df=df,time_col="timestamp_col",level="M", plot=False, penalty=0.1) # note that level "M" stands for Month
 
