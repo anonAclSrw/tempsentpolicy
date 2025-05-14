@@ -69,9 +69,9 @@ To learn how we used it in our experiments, go to `demo.ipynb`. Alternatively, r
 1. Lets start off by performing continous time series clustering to select our annotated data
 
 ```python
-from temporally_sensitive_sentiment_analysis_for_policy.merging import greedy_souping, ties
-from temporally_sensitive_sentiment_analysis_for_policy.fine_tuning import finetune
-from temporally_sensitive_sentiment_analysis_for_policy.continous_time_series_clustering import cluster_sampling, continous_time_series_clustering
+from tempsentpolicy import greedy_souping, ties
+from tempsentpolicy import finetune
+from tempsentpolicy import cluster_sampling, continous_time_series_clustering
 
 df_climate=continous_time_series_clustering(df=df,time_col="timestamp_col",level="M", plot=False, penalty=0.1) # note that level "M" stands for Month
 
