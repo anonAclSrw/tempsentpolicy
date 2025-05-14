@@ -8,6 +8,8 @@ Key features include:
 - Continuous time-series clustering to prioritize data points for annotation based on temporal trends.  
 - Advanced model merging techniques to unify multiple models fine-tuned on distinct temporal slices.  
 
+
+Methods:  
 - Continous time series is performed using `Ruptures`  
 - It supports the following merging techniques:  
     1.  Uniform Souping
