@@ -1,8 +1,6 @@
- is designed to ensure robust generalization across time stamps for sentiment analysis in policy-related texts. 
-
 # tempsentpolicy
 
-**Temp**orally-sensitive **Sent**iment analysis in **Policy** (**tempsentpolicy**) is a Python package designed to ensure robust generalization across time stamps for sentiment analysis in policy-related texts.  
+**Temp**orally-sensitive **Sent**iment analysis in **Policy** (**tempsentpolicy**) is a Python package ddesigned to ensure robust generalization across time stamps for sentiment analysis in policy-related texts. 
 
 It accounts for the **temporal dynamics** of evolving policy discourse and evaluates sentiment models under realistic settings that mimic actual policy analysis scenarios.  
 
